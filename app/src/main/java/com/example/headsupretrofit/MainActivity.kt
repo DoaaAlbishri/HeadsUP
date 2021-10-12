@@ -107,13 +107,13 @@ class MainActivity : AppCompatActivity() {
         val rotation = windowManager.defaultDisplay.rotation
         if(rotation == Surface.ROTATION_0 || rotation == Surface.ROTATION_180){
             if(gameStarted){
-                newCelebrity()
                 updateInterface(false)
             }else{
                 updateInterface(false)
             }
         }else{
             if(gameStarted){
+                newCelebrity()
                 updateInterface(true)
             }else{
                 updateInterface(false)
